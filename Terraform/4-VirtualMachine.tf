@@ -240,7 +240,7 @@ resource "azurerm_linux_virtual_machine" "project-az-workernode01" {
 #   name                = "project-az-workernode02"
 #   resource_group_name = azurerm_resource_group.project-az-rg01.name
 #   location            = azurerm_resource_group.project-az-rg01.location
-#   size                = "Standard_B2ts_v2"
+#   size                = "Standard_B2als_v2"
 #   disable_password_authentication = false
 #   admin_username      = "myadmin"
 #   admin_password      = "Admin@123456"
