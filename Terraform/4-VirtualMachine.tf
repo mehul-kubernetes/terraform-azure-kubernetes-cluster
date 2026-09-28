@@ -196,7 +196,7 @@ resource "azurerm_linux_virtual_machine" "project-az-workernode01" {
 # Define Public IP...............................................................
 
 # resource "azurerm_public_ip" "project-az-workernode02-ip" {
-#   depends_on          = [azurerm_linux_virtual_machine.project-az-masternode01, azurerm_linux_virtual_machine.project-az-workernode01]
+#   depends_on          = [azurerm_linux_virtual_machine.project-az-workernode01]
 #   name                = "project-az-workernode02-ip"
 #   location            = azurerm_resource_group.project-az-rg01.location
 #   resource_group_name = azurerm_resource_group.project-az-rg01.name
@@ -292,7 +292,7 @@ resource "azurerm_linux_virtual_machine" "project-az-workernode01" {
 # Define Public IP..............................................................
 
 # resource "azurerm_public_ip" "project-az-workernode03-ip" {
-#   depends_on          = [azurerm_linux_virtual_machine.project-az-masternode01]
+#   depends_on          = [azurerm_linux_virtual_machine.project-az-workernode02]
 #   name                = "project-az-workernode03-ip"
 #   location            = azurerm_resource_group.project-az-rg01.location
 #   resource_group_name = azurerm_resource_group.project-az-rg01.name
@@ -385,7 +385,7 @@ resource "azurerm_linux_virtual_machine" "project-az-workernode01" {
 # # Define Public IP..............................................................
 
 # resource "azurerm_public_ip" "project-az-workernode04-ip" {
-#   depends_on          = [azurerm_linux_virtual_machine.project-az-masternode01]
+#   depends_on          = [azurerm_linux_virtual_machine.project-az-workernode03]
 #   name                = "project-az-workernode04-ip"
 #   location            = azurerm_resource_group.project-az-rg01.location
 #   resource_group_name = azurerm_resource_group.project-az-rg01.name
